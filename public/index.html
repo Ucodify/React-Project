@@ -24,7 +24,21 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
+  />
+    <title>Mern stack</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +53,66 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <header>
+      <div class="container">
+        <!-- SMALL DEVICE -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="small">
+            <div class="smallLogo">
+              <a href="index.html"
+                ><img src="./assets/images/gifs/logo2.png" alt="Logo"
+              /></a>
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <li><a href="./template/portifolio.html">Portifolio</a></li>
+            </ul>
+            <div class="smallMedia">
+              <a href="https://www.facebook.com/irene.mmassy.1466"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/minaheryy/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/laura-irene-paul"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.behance.net/laummassy01ce"
+                ><i class="fab fa-behance"></i
+              ></a>
+              <a href="https://github.com/irenemmassy"
+                ><i class="fab fa-github-alt"></i
+              ></a>
+            </div>
+            <p>
+              Check out my articles, React and React Native UI components at the
+              code laboratory.
+            </p>
+          </div>
+        </div>
+        <!-- END SMALL DEVICE -->
+        <div class="nav">
+          <div class="nav1"></div>
+          <div class="nav2">
+            <div class="menu"><a href="#about">About Me</a></div>
+            <div class="menu"><a href="#services">Services</a></div>
+            <div class="menu"><a href="#">Blogs</a></div>
+            <div class="menu">
+              <a href="./template/portifolio.html">Portifolio</a>
+            </div>
+            <div class="menu"><a href="#contact">contact Me</a></div>
+          </div>
+          <!-- opensmall -->
+          <div id="opened" onclick="openNav()">&#9776;</div>
+          <!-- opensmall -->
+        </div>
+      </div>
+    </header>
   </body>
 </html>
